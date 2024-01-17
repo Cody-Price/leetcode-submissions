@@ -6,7 +6,6 @@ function numberGame(nums: number[]): number[] {
     const aliceArr: number[] = [];
 
     while (arr.length < initialNumsLength) {
-        console.log('sortedNums:', nums);
         aliceArr.push(nums.shift());
         bobArr.push(nums.shift());
         arr.push(bobArr.shift());

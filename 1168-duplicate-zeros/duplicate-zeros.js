@@ -7,7 +7,7 @@ var duplicateZeros = function(arr) {
         if (arr[i] === 0) {
             arr.splice(i, 0, 0);
             arr.pop();
-            i = i + 1;
+            i++;
         }
     }
 

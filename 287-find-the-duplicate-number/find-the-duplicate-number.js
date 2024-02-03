@@ -3,6 +3,9 @@
  * @return {number}
  */
 var findDuplicate = function(nums) {
+    if (nums.length <= 2) {
+        return nums[0]
+    }
     let checkArr = nums.slice();
     checkArr.sort((a, b) => {
         if (a < b) {

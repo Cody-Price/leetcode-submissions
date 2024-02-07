@@ -4,5 +4,5 @@
  * @return {boolean}
  */
 var searchMatrix = function(matrix, target) {
-    return !!matrix.filter(mtx => !!mtx.filter(n => n === target).length)[0];
+    return !!matrix.filter(mtx => !!mtx.filter(n => n === target).length).length > 0;
 };

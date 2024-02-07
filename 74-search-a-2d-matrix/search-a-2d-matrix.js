@@ -3,4 +3,6 @@
  * @param {number} target
  * @return {boolean}
  */
-const searchMatrix = (matrix, target) => !!matrix.filter(mtx => !!mtx.filter(n => n === target).length).length > 0;
+var searchMatrix = function(matrix, target) {
+    return !!matrix.filter(mtx => !!mtx.filter(n => n === target).length).length > 0;
+};
